@@ -76,29 +76,29 @@ for (let i = 0; i < names.length; i++) {
 
 // Deleated repeated code and made the final product easier to read.
 function greet(name) {
-   return `Welcome, ${name}!`
+   console.log(`Welcome, ${name}!`)
 }
 
-console.log(greet('Alice')); // Welcome Alice!
-console.log(greet(`Bob`));  // Welcome Bob!
-console.log(greet(`Charlie`)); // Welcome Charlie
+greet('Alice'); // Welcome Alice!
+greet(`Bob`);  // Welcome Bob!
+greet(`Charlie`); // Welcome Charlie
 
 // Function to add two numbers together
 function sumOfTwoNumbers(num1, num2) {
    sum = num1 + num2
-   return `The sum of ` + String(num1) + ` and ` + String(num2) + ` is ` + String(sum) + '.'
+   return console.log(`The sum of ` + String(num1) + ` and ` + String(num2) + ` is ` + String(sum) + '.')
 }
 
-console.log(sumOfTwoNumbers(5, 10)); // 'The sum of 5 and 10 is 15.
+sumOfTwoNumbers(5, 10); // 'The sum of 5 and 10 is 15.
 
 
 //Function to multiply two numbers together
 function productOfTwoNumbers(num1, num2) {
    product = num1 * num2
-   return 'The product of ' + String(num1) + ` and ` + String(num2) + ` is ` + String(product) + `.`
+   return console.log('The product of ' + String(num1) + ` and ` + String(num2) + ` is ` + String(product) + `.`)
 }
 
-console.log(productOfTwoNumbers(5, 10)); //The product of 5 and 10 is 50.
+productOfTwoNumbers(5, 10); //The product of 5 and 10 is 50.
 
 
 //Function to print strings from an array
