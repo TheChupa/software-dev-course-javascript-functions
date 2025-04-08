@@ -74,6 +74,9 @@ for (let i = 0; i < names.length; i++) {
 // ✅ Your refactored code goes below this line!
 
 
+// Code Break
+console.log("-------");
+
 // Deleated repeated code and made the final product easier to read.
 function greet(name) {
    console.log(`Welcome, ${name}!`)
