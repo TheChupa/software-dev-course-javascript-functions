@@ -33,25 +33,25 @@ This activity reinforces:
 // ============================================
 
 // Script 1 - Greeting multiple users
-console.log("Welcome, Alice!");
-console.log("Welcome, Bob!");
-console.log("Welcome, Charlie!");
+//console.log("Welcome, Alice!");
+//console.log("Welcome, Bob!");
+//console.log("Welcome, Charlie!");
 
 // Script 2 - Sum calculation
-let num1 = 5, num2 = 10;
-let sum = num1 + num2;
-console.log("The sum of 5 and 10 is " + sum);
+//let num1 = 5, num2 = 10;
+//let sum = num1 + num2;
+//console.log("The sum of 5 and 10 is " + sum);
 
 // Script 3 - Product calculation
-let product = num1 * num2;
-console.log("The product of 5 and 10 is " + product);
+//let product = num1 * num2;
+//console.log("The product of 5 and 10 is " + product);
 
 // Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+//let names = ["Alice", "Bob", "Charlie"];
+//console.log("Names in the list:");
+//for (let i = 0; i < names.length; i++) {
+  //  console.log(names[i]);
+//}
 
 /*
 ===========================================
@@ -74,44 +74,49 @@ for (let i = 0; i < names.length; i++) {
 // ✅ Your refactored code goes below this line!
 
 
-// Code Break
-console.log("-------");
+// Script 1 - Greeting multiple users
+let names = ["Alice", "Bob" , "Charlie"];
+let a = 5 ;
+let b = 10 ;
 
-// Deleated repeated code and made the final product easier to read.
+
 function greet(name) {
+for (name of names)
    console.log(`Welcome, ${name}!`)
 }
 
-greet('Alice'); // Welcome Alice!
-greet(`Bob`);  // Welcome Bob!
-greet(`Charlie`); // Welcome Charlie
+greet(names);
 
-// Function to add two numbers together
-function sumOfTwoNumbers(num1, num2) {
-   sum = num1 + num2
-   return console.log(`The sum of ` + String(num1) + ` and ` + String(num2) + ` is ` + String(sum) + '.')
+// Script 2 - Sum calculation
+function add(a, b) {
+  return a + b
+}
+function printSum(a, b) {
+   return console.log(`The sum of ${a} and ${b} is ${add(a, b)}`)
 }
 
-sumOfTwoNumbers(5, 10); // 'The sum of 5 and 10 is 15.
+printSum(a, b);
+
+// Script 3 - Product calculation
 
 
-//Function to multiply two numbers together
-function productOfTwoNumbers(num1, num2) {
-   product = num1 * num2
-   return console.log('The product of ' + String(num1) + ` and ` + String(num2) + ` is ` + String(product) + `.`)
+function multiply(a, b) {
+   return a * b
 }
 
-productOfTwoNumbers(5, 10); //The product of 5 and 10 is 50.
+function printProduct(a, b) {
+   return console.log(`The product of ${a} and ${b} is ${multiply(a, b)}`)
+}
 
+printProduct(a, b);
 
-//Function to print strings from an array
+// Script 4 - Print names from a list
 
-
-function printNames(names) {
+function printNames(names) { 
    console.log('Names in List:')
    for (let i = 0; i < names.length; i++) {
       console.log(names[i]);
    }
 }
 
-printNames(["Alice", "Bob" , "Charlie"]); // Output Alice Bob Charlie
+printNames(names);
