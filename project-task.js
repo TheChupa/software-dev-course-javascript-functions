@@ -108,7 +108,7 @@ productOfTwoNumbers(5, 10); //The product of 5 and 10 is 50.
 
 
 function printNames(names) {
-   console.log('Names in the List:');
+   console.log('Names in List:')
    for (let i = 0; i < names.length; i++) {
       console.log(names[i]);
    }
