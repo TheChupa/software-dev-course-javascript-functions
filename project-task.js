@@ -74,11 +74,12 @@ This activity reinforces:
 // ✅ Your refactored code goes below this line!
 
 
-// Script 1 - Greeting multiple users
+
 let names = ["Alice", "Bob" , "Charlie"];
 let a = 5 ;
 let b = 10 ;
 
+// Script 1 - Greeting multiple users
 
 function greet(name) {
 for (name of names)
@@ -88,6 +89,7 @@ for (name of names)
 greet(names);
 
 // Script 2 - Sum calculation
+
 function add(a, b) {
   return a + b
 }
@@ -98,7 +100,6 @@ function printSum(a, b) {
 printSum(a, b);
 
 // Script 3 - Product calculation
-
 
 function multiply(a, b) {
    return a * b
